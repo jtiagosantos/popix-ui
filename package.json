@@ -8,7 +8,8 @@
     "build": "tsc && vite build",
     "lint:check": "npx eslint \"src/**/*.{ts,tsx}\"",
     "lint:fix": "npx eslint \"src/**/*.{ts,tsx}\" --fix",
-    "commit": "cz"
+    "commit": "cz",
+    "prepare": "husky install"
   },
   "dependencies": {
     "react": "^18.2.0",
@@ -24,6 +25,7 @@
     "eslint": "^8.35.0",
     "eslint-config-prettier": "^8.6.0",
     "eslint-plugin-prettier": "^4.2.1",
+    "husky": "^8.0.3",
     "prettier": "^2.8.4",
     "typescript": "^4.9.3",
     "vite": "^4.1.0"
