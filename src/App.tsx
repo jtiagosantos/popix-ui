@@ -1,5 +1,3 @@
 export const App = () => {
-  return (
-    <h1>PopixUI</h1>
-  );
-}
+  return <h1>PopixUI</h1>;
+};
