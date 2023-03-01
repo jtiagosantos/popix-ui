@@ -3,7 +3,9 @@
   "private": false,
   "version": "0.0.0",
   "type": "module",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "exports": {
     ".": {
       "import": "./dist/popix-ui.js",
@@ -20,6 +22,7 @@
     "prepare": "husky install"
   },
   "dependencies": {
+    "@stitches/react": "^1.2.8",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "vite-plugin-dts": "^2.0.2"
