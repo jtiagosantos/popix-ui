@@ -11,7 +11,7 @@ const spin = keyframes({
   },
 });
 
-export const SpinnerUI = styled('div', {
+const SpinnerUI = styled('div', {
   bgColor: 'transparent',
   borderRadius: '$round',
   position: 'relative',
