@@ -31,7 +31,7 @@ type SpinnerProps = {
 
 type SpinnerCSSProperties = ComponentProps<typeof SpinnerUI>['css'];
 
-export const Spinner: FC<SpinnerProps> = ({ size = 18, thickness = 2, color, css = {} }) => {
+export const Spinner: FC<SpinnerProps> = ({ size = 18, thickness = 2, color, css }) => {
   if (!size) return null;
 
   return (
