@@ -4,6 +4,12 @@ import type { CSSProperties } from '@stitches/react';
 type Value = string | number;
 
 type Utils = ConfigType.Utils<{
+  w: (value: Value) => CSSProperties;
+  minW: (value: Value) => CSSProperties;
+  maxW: (value: Value) => CSSProperties;
+  h: (value: Value) => CSSProperties;
+  minH: (value: Value) => CSSProperties;
+  maxH: (value: Value) => CSSProperties;
   m: (value: Value) => CSSProperties;
   mt: (value: Value) => CSSProperties;
   mb: (value: Value) => CSSProperties;
@@ -20,9 +26,28 @@ type Utils = ConfigType.Utils<{
   square: (value: Value) => CSSProperties;
   circle: (value: Value) => CSSProperties;
   linearGradient: (value: Value) => CSSProperties;
+  bgColor: (value: string) => CSSProperties;
 }>;
 
 export const utils: Utils = {
+  w: (value) => ({
+    width: value,
+  }),
+  minW: (value) => ({
+    minWidth: value,
+  }),
+  maxW: (value) => ({
+    maxWidth: value,
+  }),
+  h: (value) => ({
+    height: value,
+  }),
+  minH: (value) => ({
+    minHeight: value,
+  }),
+  maxH: (value) => ({
+    maxHeight: value,
+  }),
   m: (value) => ({
     margin: value,
   }),
@@ -75,5 +100,8 @@ export const utils: Utils = {
   }),
   linearGradient: (value) => ({
     backgroundImage: `linear-gradient(${value})`,
+  }),
+  bgColor: (value) => ({
+    backgroundColor: value,
   }),
 };
