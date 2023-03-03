@@ -1,5 +1,7 @@
 import { Spinner } from './spinner.component';
 
+import { convertHexadecimalColorToRgbaColor } from '../utils/convert-hexadecimal-color-to-rgba-color';
+
 import type { FC, ComponentProps } from 'react';
 import type { CSSProperties } from '@stitches/react';
 
@@ -40,9 +42,6 @@ const ButtonUI = styled('button', {
   variants: {
     variant: {
       solid: {
-        backgroundColor: '#6d28d9',
-        color: '#fff',
-
         '&:not(:disabled):hover': {
           filter: 'brightness(0.9)',
         },
@@ -54,18 +53,14 @@ const ButtonUI = styled('button', {
 
       outline: {
         backgroundColor: 'transparent',
-        color: '#6d28d9',
-        borderColor: '#6d28d9',
       },
 
       ghost: {
         backgroundColor: 'transparent',
-        color: '#6d28d9',
       },
 
       link: {
         backgroundColor: 'transparent',
-        color: '#6d28d9',
         textDecoration: 'underline',
       },
     },
@@ -93,24 +88,32 @@ type ButtonProps = Omit<ComponentProps<typeof ButtonUI>, 'disabled'> & {
   isDisabled?: boolean;
 };
 
-export const ButtonHandlerProps: FC<ButtonProps> = ({
+const ButtonHandlerProps: FC<ButtonProps> = ({
   variant = 'solid',
   isLoading = false,
   isDisabled = false,
-  colorTheme,
+  colorTheme = '#6d28d9',
   children,
   css,
   ...props
 }) => {
+  const converterdColor = convertHexadecimalColorToRgbaColor(colorTheme, 0.3);
   const solid: CSSProperties = {
+    color: '#fff',
     backgroundColor: colorTheme,
   };
-  const outline: CSSProperties = {
+  const outline = {
     color: colorTheme,
     borderColor: colorTheme,
+    '&:not(:disabled):hover': {
+      backgroundColor: converterdColor,
+    },
   };
-  const ghost: CSSProperties = {
+  const ghost = {
     color: colorTheme,
+    '&:not(:disabled):hover': {
+      backgroundColor: converterdColor,
+    },
   };
   const link: CSSProperties = {
     color: colorTheme,
