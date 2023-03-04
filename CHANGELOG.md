@@ -1,5 +1,11 @@
 # popix-ui
 
+## 1.0.1
+
+### Patch Changes
+
+- Set default font styles to Button component
+
 ## 1.0.0
 
 ### Major Changes
