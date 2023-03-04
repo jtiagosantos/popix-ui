@@ -20,6 +20,8 @@ const ButtonUI = styled('button', {
 
   textAlign: 'center',
   fontWeight: '500',
+  fontFamily: 'Verdana, Helvetica',
+  fontSize: '16px',
 
   display: 'flex',
   alignItems: 'center',
