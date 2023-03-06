@@ -17,6 +17,8 @@ type Utils = ConfigType.Utils<{
   mr: (value: Value) => CSSProperties;
   mx: (value: Value) => CSSProperties;
   my: (value: Value) => CSSProperties;
+  ms: (value: Value) => CSSProperties;
+  me: (value: Value) => CSSProperties;
   p: (value: Value) => CSSProperties;
   pt: (value: Value) => CSSProperties;
   pb: (value: Value) => CSSProperties;
@@ -25,7 +27,8 @@ type Utils = ConfigType.Utils<{
   br: (value: Value) => CSSProperties;
   square: (value: Value) => CSSProperties;
   circle: (value: Value) => CSSProperties;
-  linearGradient: (value: Value) => CSSProperties;
+  bgGradient: (value: Value) => CSSProperties;
+  bg: (value: Value) => CSSProperties;
   bgColor: (value: string) => CSSProperties;
 }>;
 
@@ -71,6 +74,12 @@ export const utils: Utils = {
     marginTop: value,
     marginBottom: value,
   }),
+  ms: (value) => ({
+    marginInlineStart: value,
+  }),
+  me: (value) => ({
+    marginInlineEnd: value,
+  }),
   p: (value) => ({
     padding: value,
   }),
@@ -98,8 +107,11 @@ export const utils: Utils = {
     height: value,
     borderRadius: '100%',
   }),
-  linearGradient: (value) => ({
+  bgGradient: (value) => ({
     backgroundImage: `linear-gradient(${value})`,
+  }),
+  bg: (value) => ({
+    backgroundColor: value,
   }),
   bgColor: (value) => ({
     backgroundColor: value,
