@@ -13,7 +13,7 @@ const spin = keyframes({
 
 const SpinnerUI = styled('div', {
   bgColor: 'transparent',
-  borderRadius: '$round',
+  br: '$round',
   position: 'relative',
 
   borderColor: '#6d28d9',
