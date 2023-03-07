@@ -21,13 +21,6 @@ export const Container = styled('aside', {
   pr: '12px',
 
   overflowY: 'auto',
-
-  '&::-webkit-scrollbar': {
-    w: '6px',
-  },
-  '&::-webkit-scrollbar-thumb': {
-    bgColor: '#a1a1aa',
-  },
 });
 
 export const Section = styled('section', {
