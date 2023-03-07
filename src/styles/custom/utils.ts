@@ -24,6 +24,10 @@ type Utils = ConfigType.Utils<{
   pb: (value: Value) => CSSProperties;
   pl: (value: Value) => CSSProperties;
   pr: (value: Value) => CSSProperties;
+  px: (value: Value) => CSSProperties;
+  py: (value: Value) => CSSProperties;
+  ps: (value: Value) => CSSProperties;
+  pe: (value: Value) => CSSProperties;
   br: (value: Value) => CSSProperties;
   square: (value: Value) => CSSProperties;
   circle: (value: Value) => CSSProperties;
@@ -94,6 +98,20 @@ export const utils: Utils = {
   }),
   pr: (value) => ({
     paddingRight: value,
+  }),
+  px: (value) => ({
+    paddingLeft: value,
+    paddingRight: value,
+  }),
+  py: (value) => ({
+    paddingTop: value,
+    paddingBottom: value,
+  }),
+  ps: (value) => ({
+    paddingInlineStart: value,
+  }),
+  pe: (value) => ({
+    paddingInlineEnd: value,
   }),
   br: (value) => ({
     borderRadius: value,
