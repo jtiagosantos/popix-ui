@@ -6,6 +6,10 @@ export const navigation = [
         label: 'Instalação',
         path: '/installation',
       },
+      {
+        label: 'Propriedades de estilo',
+        path: '/style-props',
+      },
     ],
   },
 ];
