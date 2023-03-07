@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import { styled } from '../../styles';
 
 export const ScreenWrap = styled('main', {
-  maxW: '1000px',
+  maxW: '1100px',
   w: '100%',
   h: '100vh',
   mx: 'auto',

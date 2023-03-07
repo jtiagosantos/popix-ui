@@ -1,9 +1,9 @@
 import { styled } from '../../../styles';
 
 export const Container = styled('div', {
-  maxW: '720px',
+  maxW: '900px',
   w: '100%',
-  p: '32px 24px',
+  p: '32px 48px',
 });
 
 export const Installation = styled('div', {
