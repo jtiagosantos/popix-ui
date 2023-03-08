@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { RouterProvider } from 'react-router-dom';
-import { globalStyles } from './library/styles';
-import { router } from './routes/app.routes';
+import { globalStyles } from './docs/styles/global.styles';
+import { router } from './docs/routes/app.routes';
 
 globalStyles();
 

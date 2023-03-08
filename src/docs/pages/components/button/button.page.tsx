@@ -1,7 +1,7 @@
 import { Envelope, Wrench, ArrowRight, ArrowLeft } from 'phosphor-react';
 
-import { CodeBlock } from '../../../utils/components/code-block/code-block.util-component';
-import { Button } from '../../../library';
+import { CodeBlock } from '../../../components';
+import { Button } from '../../../../library';
 
 import { codes } from './button.codes';
 
