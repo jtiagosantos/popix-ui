@@ -1,11 +1,5 @@
 import { styled } from '../../../../library';
 
-export const Container = styled('div', {
-  maxW: '900px',
-  w: '100%',
-  p: '32px 48px',
-});
-
 export const Installation = styled('div', {
   w: '100%',
   mt: '24px',

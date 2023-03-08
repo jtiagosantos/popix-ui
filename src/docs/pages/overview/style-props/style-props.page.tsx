@@ -1,8 +1,10 @@
 import { Helmet } from 'react-helmet';
 
+import { PageContainer } from '../../../components';
+
 import { tableData } from './style-props-table-data';
 
-import * as S from './style-props.styles';
+import { Table } from './style-props.styles';
 
 export const StylePropsPage = () => {
   return (
@@ -13,10 +15,10 @@ export const StylePropsPage = () => {
         <meta name="description" content="PopixUI style props guide" />
       </Helmet>
 
-      <S.Container>
+      <PageContainer>
         <p>A tabela a seguir mostra cada alias e seu respectivo estilo em CSS:</p>
 
-        <S.Table>
+        <Table>
           <thead>
             <tr>
               <th>Alias</th>
@@ -31,8 +33,8 @@ export const StylePropsPage = () => {
               </tr>
             ))}
           </tbody>
-        </S.Table>
-      </S.Container>
+        </Table>
+      </PageContainer>
     </>
   );
 };

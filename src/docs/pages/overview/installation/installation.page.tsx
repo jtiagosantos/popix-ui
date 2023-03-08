@@ -2,10 +2,12 @@ import { Helmet } from 'react-helmet';
 import SyntaxHighlighter from 'react-syntax-highlighter';
 import { atelierCaveDark } from 'react-syntax-highlighter/dist/esm/styles/hljs';
 
+import { PageContainer } from '../../../components';
+
 import npmIcon from '../../../assets/npm-icon.svg';
 import yarnIcon from '../../../assets/yarn-icon.svg';
 
-import { Container, Installation, PackageManager } from './installation.styles';
+import { Installation, PackageManager } from './installation.styles';
 
 export const InstallationPage = () => {
   const installationWithNPM = `npm i popix-ui`;
@@ -19,7 +21,7 @@ export const InstallationPage = () => {
         <meta name="description" content="PopixUI installation guide" />
       </Helmet>
 
-      <Container>
+      <PageContainer>
         <p>Para usar Popix UI em seu projeto, execute um dos comandos no seu terminal:</p>
 
         <Installation>
@@ -37,7 +39,7 @@ export const InstallationPage = () => {
           </PackageManager>
           <SyntaxHighlighter style={atelierCaveDark}>{installationWithYarn}</SyntaxHighlighter>
         </Installation>
-      </Container>
+      </PageContainer>
     </>
   );
 };
