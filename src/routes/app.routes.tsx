@@ -5,6 +5,7 @@ import { SiderBarLayout } from '../layouts/sidebar/sidebar.layout';
 import { ErrorPage } from '../pages/error/error.page';
 import { InstallationPage } from '../pages/overview/installation/installation.page';
 import { StylePropsPage } from '../pages/overview/style-props/style-props.page';
+import { ButtonPage } from '../pages/components/button/button.page';
 
 export const router = createBrowserRouter([
   {
@@ -19,6 +20,10 @@ export const router = createBrowserRouter([
       {
         path: '/style-props',
         element: <StylePropsPage />,
+      },
+      {
+        path: '/button',
+        element: <ButtonPage />,
       },
     ],
   },

@@ -12,4 +12,13 @@ export const navigation = [
       },
     ],
   },
+  {
+    title: 'componentes',
+    routes: [
+      {
+        label: 'Button',
+        path: '/button',
+      },
+    ],
+  },
 ];
