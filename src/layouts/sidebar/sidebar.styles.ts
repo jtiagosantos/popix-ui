@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { styled } from '../../styles';
+import { styled } from '../../library';
 
 export const ScreenWrap = styled('main', {
   maxW: '1100px',

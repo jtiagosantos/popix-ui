@@ -23,8 +23,8 @@ export const globalStyles = globalCss({
     },
   },
   'html, body': {
-    minHeight: '100vh',
-    backgroundColor: '#f3f4f6',
+    minH: '100vh',
+    bgColor: '#f3f4f6',
     color: '#3f3f46',
     fontFamily: 'Poppins, Helvetica',
   },

@@ -1,4 +1,4 @@
-import { styled } from '../../../styles';
+import { styled } from '../../../library';
 
 export const CodeBlockWrap = styled('div', {
   w: '100%',

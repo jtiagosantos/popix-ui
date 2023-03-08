@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { House } from 'phosphor-react';
 
-import { Button } from '../../components/button.component';
+import { Button } from '../../library';
 
 import { Container, Title, SubTitle } from './error.styles';
 

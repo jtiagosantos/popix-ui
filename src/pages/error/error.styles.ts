@@ -1,4 +1,4 @@
-import { styled } from '../../styles';
+import { styled } from '../../library';
 
 export const Container = styled('div', {
   w: '100%',
