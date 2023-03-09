@@ -19,6 +19,10 @@ export const navigation = [
         label: 'Button',
         path: '/button',
       },
+      {
+        label: 'Spinner',
+        path: '/spinner',
+      },
     ],
   },
 ];
