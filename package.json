@@ -17,15 +17,16 @@
   "types": "./dist/index.d.ts",
   "scripts": {
     "dev": "vite",
-    "build:docs": "tsc",
-    "build:lib": "tsc && vite build",
+    "preview:docs": "vite preview",
+    "build:docs": "tsc && vite build -c docs.vite.config.ts",
+    "build:library": "tsc && vite build -c library.vite.config.ts",
     "lint:check": "npx eslint \"src/**/*.{ts,tsx}\"",
     "lint:fix": "npx eslint \"src/**/*.{ts,tsx}\" --fix",
     "commit": "cz",
     "prepare": "husky install",
     "changeset": "npx changeset",
     "changeset:version": "npx changeset version",
-    "release": "tsc && vite build && changeset publish"
+    "release": "npm run build:library && changeset publish"
   },
   "dependencies": {
     "@stitches/react": "^1.2.8",
