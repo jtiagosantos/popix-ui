@@ -17,7 +17,7 @@
   "types": "./dist/index.d.ts",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "tsc",
     "lint:check": "npx eslint \"src/**/*.{ts,tsx}\"",
     "lint:fix": "npx eslint \"src/**/*.{ts,tsx}\" --fix",
     "commit": "cz",
