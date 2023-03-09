@@ -8,12 +8,12 @@ export default defineConfig({
   plugins: [
     react(),
     dts({
-      include: ['src/**/'],
+      include: ['src/library/**/'],
     }),
   ],
   build: {
     lib: {
-      entry: resolve('src', 'index.ts'),
+      entry: resolve('src', 'library', 'index.ts'),
       name: 'PopixUI',
       formats: ['es', 'umd'],
       fileName: 'popix-ui',

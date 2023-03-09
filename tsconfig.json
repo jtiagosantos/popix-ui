@@ -19,7 +19,7 @@
     "declarationMap": true,
     "typeRoots": [
       "node_modules/@types",
-      "src/components/index.d.ts"
+      "src/library/components/index.d.ts"
     ]
   },
   "include": ["src"],

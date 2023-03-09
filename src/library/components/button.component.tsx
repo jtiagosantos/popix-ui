@@ -11,7 +11,7 @@ const ButtonUI = styled('button', {
   all: 'unset',
   minWidth: '100px',
   minHeight: '40px',
-  borderRadius: '6px',
+  br: '6px',
   padding: '0 16px',
   borderWidth: '2px',
   borderStyle: 'solid',
