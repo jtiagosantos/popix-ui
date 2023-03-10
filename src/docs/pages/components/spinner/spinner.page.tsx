@@ -68,6 +68,23 @@ export const SpinnerPage = () => {
           </SpinnerGroup>
           <CodeBlock css={{ mt: '12px' }}>{codes.thickness}</CodeBlock>
         </PageSection>
+
+        <PageSection>
+          <h2>Velocidade</h2>
+          <p>
+            Por padrão, a velocidade(<HighlightedText>animation-duration</HighlightedText>) do
+            spinner é 0.5s, mas é possível alterar usando a propriedade{' '}
+            <HighlightedText>speed</HighlightedText>.
+          </p>
+          <SpinnerGroup css={{ mt: '16px' }}>
+            <Spinner size={40} />
+            <Spinner size={40} speed="1s" />
+            <Spinner size={40} speed="2s" />
+            <Spinner size={40} speed="0.3s" />
+            <Spinner size={40} speed="0.1s" />
+          </SpinnerGroup>
+          <CodeBlock css={{ mt: '12px' }}>{codes.speed}</CodeBlock>
+        </PageSection>
       </PageContainer>
     </>
   );
