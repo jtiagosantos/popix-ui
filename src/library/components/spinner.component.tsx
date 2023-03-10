@@ -19,7 +19,7 @@ const SpinnerUI = styled('div', {
   borderColor: '#6d28d9',
   borderStyle: 'solid',
 
-  animation: `${spin} 0.5s linear infinite`,
+  animation: `${spin} linear infinite`,
 });
 
 type SpinnerProps = {
@@ -27,11 +27,18 @@ type SpinnerProps = {
   thickness?: string | number;
   color?: string;
   css?: SpinnerCSSProperties;
+  speed?: string;
 };
 
 type SpinnerCSSProperties = ComponentProps<typeof SpinnerUI>['css'];
 
-export const Spinner: FC<SpinnerProps> = ({ size = 18, thickness = 2, color, css }) => {
+export const Spinner: FC<SpinnerProps> = ({
+  size = 18,
+  thickness = 2,
+  speed = '0.5s',
+  color,
+  css,
+}) => {
   if (!size) return null;
 
   return (
@@ -41,6 +48,7 @@ export const Spinner: FC<SpinnerProps> = ({ size = 18, thickness = 2, color, css
         borderWidth: thickness,
         borderColor: color,
         borderTopColor: 'transparent',
+        animationDuration: speed,
         ...css,
       }}
     />
