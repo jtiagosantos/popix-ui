@@ -4,7 +4,8 @@
   "version": "1.0.3",
   "type": "module",
   "files": [
-    "dist"
+    "dist",
+    "README.md"
   ],
   "main": "./dist/popix-ui.umd.cjs",
   "module": "./dist/popix-ui.js",
