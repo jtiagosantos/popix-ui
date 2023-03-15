@@ -1,3 +1,4 @@
+import { Helmet } from 'react-helmet';
 import { PageContainer, HighlightedText, PageSection, CodeBlock } from '../../../components';
 
 import { codes } from './global-styles.codes';
@@ -5,6 +6,12 @@ import { codes } from './global-styles.codes';
 export const GlobalStylesPage = () => {
   return (
     <>
+      <Helmet>
+        <title>Global Styles - Popix UI</title>
+        <meta name="title" content="Global Styles - Popix UI" />
+        <meta name="description" content="PopixUI global styles guide" />
+      </Helmet>
+
       <PageContainer>
         <p>
           É comum em aplicações Front-end precisar resetar alguns estilos ou adicionar estilos
