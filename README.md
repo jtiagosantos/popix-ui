@@ -5,8 +5,6 @@
 - [x] **[Button](https://popix-ui.vercel.app/button)**
 - [x] **[Spinner](https://popix-ui.vercel.app/spinner)**
 
-<br>
-
 ## 📝 Documentation
 
 - **[link](https://popix-ui.vercel.app/)**
