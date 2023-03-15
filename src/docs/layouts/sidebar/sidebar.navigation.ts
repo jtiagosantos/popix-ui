@@ -10,6 +10,10 @@ export const navigation = [
         label: 'Propriedades de estilo',
         path: '/style-props',
       },
+      {
+        label: 'Estilos globais',
+        path: '/global-styles',
+      },
     ],
   },
   {
