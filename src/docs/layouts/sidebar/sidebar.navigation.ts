@@ -4,15 +4,15 @@ export const navigation = [
     routes: [
       {
         label: 'Instalação',
-        path: '/installation',
+        path: '/overview/installation',
       },
       {
         label: 'Propriedades de estilo',
-        path: '/style-props',
+        path: '/overview/style-props',
       },
       {
         label: 'Estilos globais',
-        path: '/global-styles',
+        path: '/overview/global-styles',
       },
     ],
   },
@@ -21,11 +21,11 @@ export const navigation = [
     routes: [
       {
         label: 'Button',
-        path: '/button',
+        path: '/components/button',
       },
       {
         label: 'Spinner',
-        path: '/spinner',
+        path: '/components/spinner',
       },
     ],
   },

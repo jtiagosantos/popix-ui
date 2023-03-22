@@ -11,7 +11,7 @@ export const SiderBarLayout = () => {
 
   useEffect(() => {
     if (pathname === '/') {
-      navigate('/installation');
+      navigate('/overview/installation');
     }
   }, []);
 

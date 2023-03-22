@@ -18,23 +18,23 @@ export const router = createBrowserRouter([
     errorElement: <ErrorPage />,
     children: [
       {
-        path: '/installation',
+        path: '/overview/installation',
         element: <InstallationPage />,
       },
       {
-        path: '/style-props',
+        path: '/overview/style-props',
         element: <StylePropsPage />,
       },
       {
-        path: '/global-styles',
+        path: '/overview/global-styles',
         element: <GlobalStylesPage />,
       },
       {
-        path: '/button',
+        path: '/components/button',
         element: <ButtonPage />,
       },
       {
-        path: '/spinner',
+        path: '/components/spinner',
         element: <SpinnerPage />,
       },
     ],
