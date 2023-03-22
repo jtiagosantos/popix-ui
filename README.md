@@ -1,10 +1,10 @@
-<h1 align="center">PopixUI</h1>
+<h2 align="center">PopixUI</h2>
 
-## 🎨 Components
+### 🎨 Components
 
-- [x] **[Button](https://popix-ui.vercel.app/button)**
-- [x] **[Spinner](https://popix-ui.vercel.app/spinner)**
+- [x] **[Button](https://popix-ui.vercel.app/components/button)**
+- [x] **[Spinner](https://popix-ui.vercel.app/components/spinner)**
 
-## 📝 Documentation
+### 📝 Documentation
 
 - **[link](https://popix-ui.vercel.app/)**
