@@ -14,6 +14,10 @@ export const navigation = [
         label: 'Estilos globais',
         path: '/overview/global-styles',
       },
+      {
+        label: 'Propriedade css',
+        path: '/overview/css-property',
+      },
     ],
   },
   {

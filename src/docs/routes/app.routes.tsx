@@ -7,6 +7,7 @@ import { ErrorPage } from '../pages/error/error.page';
 import { InstallationPage } from '../pages/overview/installation/installation.page';
 import { StylePropsPage } from '../pages/overview/style-props/style-props.page';
 import { GlobalStylesPage } from '../pages/overview/global-styles/global-styles.page';
+import { CSSPropertyPage } from '../pages/overview/css-property/css-property.page';
 
 import { ButtonPage } from '../pages/components/button/button.page';
 import { SpinnerPage } from '../pages/components/spinner/spinner.page';
@@ -28,6 +29,10 @@ export const router = createBrowserRouter([
       {
         path: '/overview/global-styles',
         element: <GlobalStylesPage />,
+      },
+      {
+        path: '/overview/css-property',
+        element: <CSSPropertyPage />,
       },
       {
         path: '/components/button',
