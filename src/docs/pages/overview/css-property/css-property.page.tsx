@@ -1,3 +1,4 @@
+import { Helmet } from 'react-helmet';
 import { HighlightedText, PageContainer, PageSection, CodeBlock } from '../../../components';
 import { Button } from '../../../../library';
 
@@ -8,6 +9,12 @@ import { ButtonGroup } from './css-property.styles';
 export const CSSPropertyPage = () => {
   return (
     <>
+      <Helmet>
+        <title>CSS Property - Popix UI</title>
+        <meta name="title" content="CSS Property - Popix UI" />
+        <meta name="description" content="PopixUI css property guide" />
+      </Helmet>
+
       <PageContainer>
         <p>
           Por padrão, os components do PopixUI já vêm com estilos padrões, mas é possível
