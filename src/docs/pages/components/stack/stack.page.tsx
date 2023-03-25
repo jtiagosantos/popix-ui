@@ -1,3 +1,4 @@
+import { Helmet } from 'react-helmet';
 import { CodeBlock, PageContainer, PageSection, HighlightedText } from '../../../components';
 import { Stack } from '../../../../library';
 
@@ -8,6 +9,12 @@ import { Box } from './stack.styles';
 export const StackPage = () => {
   return (
     <>
+      <Helmet>
+        <title>Stack - Popix UI</title>
+        <meta name="title" content="Stack - Popix UI" />
+        <meta name="description" content="PopixUI stack component guide" />
+      </Helmet>
+
       <PageContainer>
         <PageSection>
           <h2>Importar</h2>
