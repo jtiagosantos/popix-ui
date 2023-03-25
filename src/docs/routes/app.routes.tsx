@@ -11,6 +11,7 @@ import { CSSPropertyPage } from '../pages/overview/css-property/css-property.pag
 
 import { ButtonPage } from '../pages/components/button/button.page';
 import { SpinnerPage } from '../pages/components/spinner/spinner.page';
+import { StackPage } from '../pages/components/stack/stack.page';
 
 export const router = createBrowserRouter([
   {
@@ -41,6 +42,10 @@ export const router = createBrowserRouter([
       {
         path: '/components/spinner',
         element: <SpinnerPage />,
+      },
+      {
+        path: '/components/stack',
+        element: <StackPage />,
       },
     ],
   },
