@@ -28,14 +28,14 @@ export const SpinnerPage = () => {
             , mas é possível alterar passando um valor personalizado para a propriedade{' '}
             <HighlightedText>size</HighlightedText>.
           </p>
-          <SpinnerGroup css={{ mt: '16px' }}>
+          <SpinnerGroup css={{ my: '16px' }}>
             <Spinner />
             <Spinner size={30} />
             <Spinner size={40} />
             <Spinner size={50} />
             <Spinner size={60} />
           </SpinnerGroup>
-          <CodeBlock css={{ mt: '12px' }}>{codes.sizes}</CodeBlock>
+          <CodeBlock>{codes.sizes}</CodeBlock>
         </PageSection>
 
         <PageSection>
@@ -44,13 +44,13 @@ export const SpinnerPage = () => {
             Por padrão, a cor do spinner é <HighlightedText>#6d28d9</HighlightedText>, mas é
             possível alterar usando a propriedade <HighlightedText>color</HighlightedText>.
           </p>
-          <SpinnerGroup css={{ mt: '16px' }}>
+          <SpinnerGroup css={{ my: '16px' }}>
             <Spinner color="#16a34a" size={40} />
             <Spinner color="#be185d" size={40} />
             <Spinner color="#ea580c" size={40} />
             <Spinner color="#0284c7" size={40} />
           </SpinnerGroup>
-          <CodeBlock css={{ mt: '12px' }}>{codes.colors}</CodeBlock>
+          <CodeBlock>{codes.colors}</CodeBlock>
         </PageSection>
 
         <PageSection>
@@ -59,14 +59,14 @@ export const SpinnerPage = () => {
             Por padrão, a espessura do spinner é de <HighlightedText>2px</HighlightedText>, mas é
             possível alterar usando a propriedade <HighlightedText>thickness</HighlightedText>.
           </p>
-          <SpinnerGroup css={{ mt: '16px' }}>
+          <SpinnerGroup css={{ my: '16px' }}>
             <Spinner size={40} />
             <Spinner size={40} thickness={3} />
             <Spinner size={40} thickness={4} />
             <Spinner size={40} thickness={5} />
             <Spinner size={40} thickness={6} />
           </SpinnerGroup>
-          <CodeBlock css={{ mt: '12px' }}>{codes.thickness}</CodeBlock>
+          <CodeBlock>{codes.thickness}</CodeBlock>
         </PageSection>
 
         <PageSection>
@@ -76,14 +76,14 @@ export const SpinnerPage = () => {
             spinner é 0.5s, mas é possível alterar usando a propriedade{' '}
             <HighlightedText>speed</HighlightedText>.
           </p>
-          <SpinnerGroup css={{ mt: '16px' }}>
+          <SpinnerGroup css={{ my: '16px' }}>
             <Spinner size={40} />
             <Spinner size={40} speed="1s" />
             <Spinner size={40} speed="2s" />
             <Spinner size={40} speed="0.3s" />
-            <Spinner size={40} speed="0.1s" />
+            <Spinner size={40} speed="100ms" />
           </SpinnerGroup>
-          <CodeBlock css={{ mt: '12px' }}>{codes.speed}</CodeBlock>
+          <CodeBlock>{codes.speed}</CodeBlock>
         </PageSection>
       </PageContainer>
     </>

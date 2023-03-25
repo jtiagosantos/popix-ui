@@ -22,15 +22,12 @@ const SpinnerUI = styled('div', {
   animation: `${spin} linear infinite`,
 });
 
-type SpinnerProps = {
+type SpinnerProps = ComponentProps<typeof SpinnerUI> & {
   size?: string | number;
   thickness?: string | number;
   color?: string;
-  css?: SpinnerCSSProperties;
   speed?: string;
 };
-
-type SpinnerCSSProperties = ComponentProps<typeof SpinnerUI>['css'];
 
 export const Spinner: FC<SpinnerProps> = ({
   size = 18,

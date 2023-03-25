@@ -31,6 +31,10 @@ export const navigation = [
         label: 'Spinner',
         path: '/components/spinner',
       },
+      {
+        label: 'Stack',
+        path: '/components/stack',
+      },
     ],
   },
 ];
