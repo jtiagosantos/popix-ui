@@ -4,6 +4,7 @@
 
 - [x] **[Button](https://popix-ui.vercel.app/components/button)**
 - [x] **[Spinner](https://popix-ui.vercel.app/components/spinner)**
+- [x] **[Stack](https://popix-ui.vercel.app/components/stack)**
 
 ### 📝 Documentation
 
