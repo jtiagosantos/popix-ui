@@ -1,5 +1,12 @@
 # popix-ui
 
+## 1.1.0
+
+### Minor Changes
+
+- Add Stack component
+- Fix Spinner props (It's possible to pass more props)
+
 ## 1.0.4
 
 ### Patch Changes
