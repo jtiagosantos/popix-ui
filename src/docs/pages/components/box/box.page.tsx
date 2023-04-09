@@ -1,3 +1,4 @@
+import { Helmet } from 'react-helmet';
 import { CodeBlock, PageContainer, PageSection, HighlightedText } from '../../../components';
 import { Box, Button } from '../../../../library';
 
@@ -13,6 +14,12 @@ export const BoxPage = () => {
 
   return (
     <>
+      <Helmet>
+        <title>Box - Popix UI</title>
+        <meta name="title" content="Box - Popix UI" />
+        <meta name="description" content="PopixUI box component guide" />
+      </Helmet>
+
       <PageContainer>
         <PageSection>
           <h2>Importar</h2>
