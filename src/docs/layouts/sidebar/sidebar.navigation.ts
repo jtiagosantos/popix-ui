@@ -24,6 +24,10 @@ export const navigation = [
     title: 'componentes',
     routes: [
       {
+        label: 'Box',
+        path: '/components/box',
+      },
+      {
         label: 'Button',
         path: '/components/button',
       },

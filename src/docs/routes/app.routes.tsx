@@ -9,6 +9,7 @@ import { StylePropsPage } from '../pages/overview/style-props/style-props.page';
 import { GlobalStylesPage } from '../pages/overview/global-styles/global-styles.page';
 import { CSSPropertyPage } from '../pages/overview/css-property/css-property.page';
 
+import { BoxPage } from '../pages/components/box/box.page';
 import { ButtonPage } from '../pages/components/button/button.page';
 import { SpinnerPage } from '../pages/components/spinner/spinner.page';
 import { StackPage } from '../pages/components/stack/stack.page';
@@ -34,6 +35,10 @@ export const router = createBrowserRouter([
       {
         path: '/overview/css-property',
         element: <CSSPropertyPage />,
+      },
+      {
+        path: '/components/box',
+        element: <BoxPage />,
       },
       {
         path: '/components/button',
