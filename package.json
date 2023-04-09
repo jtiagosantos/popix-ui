@@ -30,6 +30,7 @@
     "release": "npm run build:library && changeset publish"
   },
   "dependencies": {
+    "@radix-ui/react-slot": "^1.0.1",
     "@stitches/react": "^1.2.8",
     "phosphor-react": "^1.4.1",
     "react-helmet": "^6.1.0",
