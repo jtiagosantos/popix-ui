@@ -36,4 +36,6 @@ export const tableData = [
   { alias: 'bg', css: 'background' },
   { alias: 'bgColor', css: 'background-color' },
   { alias: 'bgGradient', css: 'background-image' },
+
+  { alias: 'flexDir', css: 'flex-direction' },
 ];
