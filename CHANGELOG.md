@@ -1,5 +1,12 @@
 # popix-ui
 
+## 1.3.0
+
+### Minor Changes
+
+- Add Heading component
+- Add flexDir css alias
+
 ## 1.2.1
 
 ### Patch Changes
