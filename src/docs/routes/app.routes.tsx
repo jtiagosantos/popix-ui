@@ -11,6 +11,7 @@ import { CSSPropertyPage } from '../pages/overview/css-property/css-property.pag
 
 import { BoxPage } from '../pages/components/box/box.page';
 import { ButtonPage } from '../pages/components/button/button.page';
+import { HeadingPage } from '../pages/components/heading/heading.page';
 import { SpinnerPage } from '../pages/components/spinner/spinner.page';
 import { StackPage } from '../pages/components/stack/stack.page';
 
@@ -43,6 +44,10 @@ export const router = createBrowserRouter([
       {
         path: '/components/button',
         element: <ButtonPage />,
+      },
+      {
+        path: '/components/heading',
+        element: <HeadingPage />,
       },
       {
         path: '/components/spinner',

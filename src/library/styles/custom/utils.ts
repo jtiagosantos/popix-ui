@@ -34,6 +34,7 @@ type Utils = ConfigType.Utils<{
   bgGradient: (value: Value) => CSSProperties;
   bg: (value: Value) => CSSProperties;
   bgColor: (value: string) => CSSProperties;
+  flexDir: (value: string) => CSSProperties;
 }>;
 
 export const utils: Utils = {
@@ -133,5 +134,8 @@ export const utils: Utils = {
   }),
   bgColor: (value) => ({
     backgroundColor: value,
+  }),
+  flexDir: (value) => ({
+    flexDirection: value,
   }),
 };
