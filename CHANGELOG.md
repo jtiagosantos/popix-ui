@@ -1,5 +1,11 @@
 # popix-ui
 
+## 1.4.0
+
+### Minor Changes
+
+- Add Text component
+
 ## 1.3.0
 
 ### Minor Changes
