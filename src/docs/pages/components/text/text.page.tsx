@@ -1,3 +1,4 @@
+import { Helmet } from 'react-helmet';
 import { CodeBlock, PageContainer, PageSection, HighlightedText } from '../../../components';
 import { Heading, Text, Stack } from '../../../../library';
 
@@ -6,6 +7,12 @@ import { codes } from './text.codes';
 export const TextPage = () => {
   return (
     <>
+      <Helmet>
+        <title>Text - Popix UI</title>
+        <meta name="title" content="Text - Popix UI" />
+        <meta name="description" content="PopixUI text component guide" />
+      </Helmet>
+
       <PageContainer>
         <PageSection>
           <Heading as="h2">Importar</Heading>
