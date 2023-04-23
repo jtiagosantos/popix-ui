@@ -43,6 +43,10 @@ export const navigation = [
         label: 'Stack',
         path: '/components/stack',
       },
+      {
+        label: 'Text',
+        path: '/components/text',
+      },
     ],
   },
 ];

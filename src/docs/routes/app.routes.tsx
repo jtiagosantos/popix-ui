@@ -14,6 +14,7 @@ import { ButtonPage } from '../pages/components/button/button.page';
 import { HeadingPage } from '../pages/components/heading/heading.page';
 import { SpinnerPage } from '../pages/components/spinner/spinner.page';
 import { StackPage } from '../pages/components/stack/stack.page';
+import { TextPage } from '../pages/components/text/text.page';
 
 export const router = createBrowserRouter([
   {
@@ -56,6 +57,10 @@ export const router = createBrowserRouter([
       {
         path: '/components/stack',
         element: <StackPage />,
+      },
+      {
+        path: '/components/text',
+        element: <TextPage />,
       },
     ],
   },
