@@ -1,6 +1,7 @@
 import { Helmet } from 'react-helmet';
+
+import { Stack, Heading, Text } from '../../../../library';
 import { CodeBlock, PageContainer, PageSection, HighlightedText } from '../../../components';
-import { Stack } from '../../../../library';
 
 import { codes } from './stack.codes';
 
@@ -17,18 +18,18 @@ export const StackPage = () => {
 
       <PageContainer>
         <PageSection>
-          <h2>Importar</h2>
+          <Heading as="h2">Importar</Heading>
           <CodeBlock css={{ mt: '6px' }}>{codes.import}</CodeBlock>
         </PageSection>
 
         <PageSection>
-          <h2>Direção</h2>
-          <p>
+          <Heading as="h2">Direção</Heading>
+          <Text>
             A propriedade responsável por definir a direção dos componentes filhos dentro do{' '}
             <HighlightedText>Stack</HighlightedText> é a{' '}
             <HighlightedText>direction</HighlightedText>, que por padrão tem o valor{' '}
             <HighlightedText>row</HighlightedText>.
-          </p>
+          </Text>
           <Stack spacing={32} css={{ my: '16px' }}>
             <Stack>
               <Box>1</Box>
@@ -45,12 +46,12 @@ export const StackPage = () => {
         </PageSection>
 
         <PageSection>
-          <h2>Espaçamento</h2>
-          <p>
+          <Heading as="h2">Espaçamento</Heading>
+          <Text>
             A propriedade responsável por definir o espaço entre os componentes filhos dentro do{' '}
             <HighlightedText>Stack</HighlightedText> é a <HighlightedText>spacing</HighlightedText>,
             que por padrão tem o valor <HighlightedText>0</HighlightedText>.
-          </p>
+          </Text>
           <Stack spacing="16px" css={{ my: '16px' }}>
             <Box>1</Box>
             <Box>2</Box>
@@ -60,12 +61,12 @@ export const StackPage = () => {
         </PageSection>
 
         <PageSection>
-          <h2>Responsividade</h2>
-          <p>
+          <Heading as="h2">Responsividade</Heading>
+          <Text>
             Para adicionar responsividade à propriedade <HighlightedText>direction</HighlightedText>
             , basta passar um objeto, sendo a chave uma regra de media query e o valor sendo{' '}
             <HighlightedText>row</HighlightedText> ou <HighlightedText>column</HighlightedText>.
-          </p>
+          </Text>
           <Stack
             spacing="16px"
             direction={{
@@ -78,12 +79,12 @@ export const StackPage = () => {
             <Box>3</Box>
           </Stack>
           <CodeBlock css={{ mb: '6px' }}>{codes.responsiveness.direction}</CodeBlock>
-          <p>
+          <Text>
             Para outras propriedades, basta passar as medias queries por meio da propriedade{' '}
             <HighlightedText>css</HighlightedText>. Só atenção para a propriedade{' '}
             <HighlightedText>spacing</HighlightedText>, que para ser alterada via media query
             deve-se passar um valor para o propriedade <HighlightedText>gap</HighlightedText>.
-          </p>
+          </Text>
           <Stack
             spacing="32px"
             css={{
