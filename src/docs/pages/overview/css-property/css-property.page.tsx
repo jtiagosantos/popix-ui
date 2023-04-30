@@ -1,6 +1,7 @@
 import { Helmet } from 'react-helmet';
+
+import { Button, Text, Heading } from '../../../../library';
 import { HighlightedText, PageContainer, PageSection, CodeBlock } from '../../../components';
-import { Button } from '../../../../library';
 
 import { codes } from './css-property.codes';
 
@@ -16,14 +17,14 @@ export const CSSPropertyPage = () => {
       </Helmet>
 
       <PageContainer>
-        <p>
+        <Text>
           Por padrão, os components do PopixUI já vêm com estilos padrões, mas é possível
           customizá-los utilizando a propriedade <HighlightedText>css</HighlightedText>.
-        </p>
+        </Text>
 
         <PageSection>
-          <h2>Exemplos</h2>
-          <ButtonGroup css={{ mt: '16px' }}>
+          <Heading as="h2">Exemplos</Heading>
+          <ButtonGroup>
             <Button css={{ color: '#000', mt: '8px' }}>Fazer login</Button>
             <Button css={{ py: '24px' }}>Criar conta</Button>
             <Button css={{ ml: '32px' }}>Sair</Button>
@@ -33,8 +34,8 @@ export const CSSPropertyPage = () => {
         </PageSection>
 
         <PageSection>
-          <h2>Exemplo de responsividade</h2>
-          <ButtonGroup css={{ mt: '16px' }}>
+          <Heading as="h2">Exemplo de responsividade</Heading>
+          <ButtonGroup>
             <Button
               css={{
                 '@media(max-width: 1000px)': {
