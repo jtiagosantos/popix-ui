@@ -1,18 +1,16 @@
 import { Helmet } from 'react-helmet';
-import SyntaxHighlighter from 'react-syntax-highlighter';
-import { atelierCaveDark } from 'react-syntax-highlighter/dist/esm/styles/hljs';
 
-import { PageContainer } from '../../../components';
+import { Text } from '../../../../library';
+import { PageContainer, CodeBlock } from '../../../components';
 
 import npmIcon from '../../../assets/npm-icon.svg';
 import yarnIcon from '../../../assets/yarn-icon.svg';
 
+import { codes } from './installation.codes';
+
 import { Installation, PackageManager } from './installation.styles';
 
 export const InstallationPage = () => {
-  const installationWithNPM = `npm i popix-ui`;
-  const installationWithYarn = `yarn add popix-ui`;
-
   return (
     <>
       <Helmet>
@@ -22,22 +20,22 @@ export const InstallationPage = () => {
       </Helmet>
 
       <PageContainer>
-        <p>Para usar Popix UI em seu projeto, execute um dos comandos no seu terminal:</p>
+        <Text>Para usar Popix UI em seu projeto, execute um dos comandos no seu terminal:</Text>
 
         <Installation>
           <PackageManager variant="npm">
             <img src={npmIcon} alt="npm" />
-            <p>npm</p>
+            <Text>npm</Text>
           </PackageManager>
-          <SyntaxHighlighter style={atelierCaveDark}>{installationWithNPM}</SyntaxHighlighter>
+          <CodeBlock>{codes.import.npm}</CodeBlock>
         </Installation>
 
         <Installation>
           <PackageManager variant="yarn">
             <img src={yarnIcon} alt="yarn" />
-            <p>yarn</p>
+            <Text>yarn</Text>
           </PackageManager>
-          <SyntaxHighlighter style={atelierCaveDark}>{installationWithYarn}</SyntaxHighlighter>
+          <CodeBlock>{codes.import.yarn}</CodeBlock>
         </Installation>
       </PageContainer>
     </>
