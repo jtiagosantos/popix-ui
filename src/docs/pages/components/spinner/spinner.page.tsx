@@ -1,6 +1,7 @@
 import { Helmet } from 'react-helmet';
+
+import { Spinner, Heading, Text } from '../../../../library';
 import { CodeBlock, PageContainer, PageSection, HighlightedText } from '../../../components';
-import { Spinner } from '../../../../library';
 
 import { codes } from './spinner.codes';
 
@@ -17,18 +18,18 @@ export const SpinnerPage = () => {
 
       <PageContainer>
         <PageSection>
-          <h2>Importar</h2>
+          <Heading as="h2">Importar</Heading>
           <CodeBlock css={{ mt: '6px' }}>{codes.import}</CodeBlock>
         </PageSection>
 
         <PageSection>
-          <h2>Tamanhos</h2>
-          <p>
+          <Heading as="h2">Tamanhos</Heading>
+          <Text>
             Por padrão, o componente tem largura e altura de <HighlightedText>20px</HighlightedText>
             , mas é possível alterar passando um valor personalizado para a propriedade{' '}
             <HighlightedText>size</HighlightedText>.
-          </p>
-          <SpinnerGroup css={{ my: '16px' }}>
+          </Text>
+          <SpinnerGroup>
             <Spinner />
             <Spinner size={30} />
             <Spinner size={40} />
@@ -39,12 +40,12 @@ export const SpinnerPage = () => {
         </PageSection>
 
         <PageSection>
-          <h2>Cores</h2>
-          <p>
+          <Heading as="h2">Cores</Heading>
+          <Text>
             Por padrão, a cor do spinner é <HighlightedText>#6d28d9</HighlightedText>, mas é
             possível alterar usando a propriedade <HighlightedText>color</HighlightedText>.
-          </p>
-          <SpinnerGroup css={{ my: '16px' }}>
+          </Text>
+          <SpinnerGroup>
             <Spinner color="#16a34a" size={40} />
             <Spinner color="#be185d" size={40} />
             <Spinner color="#ea580c" size={40} />
@@ -54,12 +55,12 @@ export const SpinnerPage = () => {
         </PageSection>
 
         <PageSection>
-          <h2>Espessura</h2>
-          <p>
+          <Heading as="h2">Espessura</Heading>
+          <Text>
             Por padrão, a espessura do spinner é de <HighlightedText>2px</HighlightedText>, mas é
             possível alterar usando a propriedade <HighlightedText>thickness</HighlightedText>.
-          </p>
-          <SpinnerGroup css={{ my: '16px' }}>
+          </Text>
+          <SpinnerGroup>
             <Spinner size={40} />
             <Spinner size={40} thickness={3} />
             <Spinner size={40} thickness={4} />
@@ -70,13 +71,13 @@ export const SpinnerPage = () => {
         </PageSection>
 
         <PageSection>
-          <h2>Velocidade</h2>
-          <p>
+          <Heading as="h2">Velocidade</Heading>
+          <Text>
             Por padrão, a velocidade(<HighlightedText>animation-duration</HighlightedText>) do
             spinner é 0.5s, mas é possível alterar usando a propriedade{' '}
             <HighlightedText>speed</HighlightedText>.
-          </p>
-          <SpinnerGroup css={{ my: '16px' }}>
+          </Text>
+          <SpinnerGroup>
             <Spinner size={40} />
             <Spinner size={40} speed="1s" />
             <Spinner size={40} speed="2s" />

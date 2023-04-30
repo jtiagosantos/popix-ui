@@ -1,6 +1,7 @@
 import { Helmet } from 'react-helmet';
-import { CodeBlock, PageContainer, PageSection, HighlightedText } from '../../../components';
+
 import { Heading, Text, Stack } from '../../../../library';
+import { CodeBlock, PageContainer, PageSection, HighlightedText } from '../../../components';
 
 import { codes } from './text.codes';
 
@@ -17,12 +18,12 @@ export const TextPage = () => {
         <PageSection>
           <Heading as="h2">Importar</Heading>
           <CodeBlock css={{ mt: '6px', mb: '16px' }}>{codes.import}</CodeBlock>
-          <p>
+          <Text>
             O componente <HighlightedText>Text</HighlightedText> do Popix-ui deve ser utilizado para
             escrever elementos de texto na página. Por padrão renderiza um elemento{' '}
             <HighlightedText>p</HighlightedText>, mas é possível alterar passando um novo valor para
             a propriedade <HighlightedText>as</HighlightedText>.
-          </p>
+          </Text>
         </PageSection>
 
         <PageSection>

@@ -1,5 +1,6 @@
 import { Helmet } from 'react-helmet';
 
+import { Text } from '../../../../library';
 import { PageContainer } from '../../../components';
 
 import { tableData } from './style-props-table-data';
@@ -16,7 +17,7 @@ export const StylePropsPage = () => {
       </Helmet>
 
       <PageContainer>
-        <p>A tabela a seguir mostra cada alias e seu respectivo estilo em CSS:</p>
+        <Text>A tabela a seguir mostra cada alias e seu respectivo estilo em CSS:</Text>
 
         <Table>
           <thead>

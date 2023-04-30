@@ -1,6 +1,6 @@
 export const codes = {
   import: `import { globalCSS } from 'popix-ui';`,
-  example_of_create: `const globalStyles = globalCSS({
+  exampleOfCreate: `const globalStyles = globalCSS({
     '*': {
       margin: 0,
       padding: 0,
@@ -13,5 +13,5 @@ export const codes = {
       fontFamily: 'Poppins, Helvetica',
     },
   });`,
-  example_of_use: `import { globalStyles } from '...' \n\nglobalStyles();`,
+  exampleOfUse: `import { globalStyles } from '...' \n\nglobalStyles();`,
 };

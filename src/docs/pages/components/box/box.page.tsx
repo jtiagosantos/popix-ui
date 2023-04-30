@@ -1,15 +1,18 @@
 import { Helmet } from 'react-helmet';
+
+import { Box, Button, Text, Heading } from '../../../../library';
 import { CodeBlock, PageContainer, PageSection, HighlightedText } from '../../../components';
-import { Box, Button } from '../../../../library';
 
 import { codes } from './box.codes';
 
 import { Input } from './box.styles';
+import { ChangeEvent } from 'react';
 
 export const BoxPage = () => {
-  const handleSubmit = (event: any) => {
+  const handleSubmit = (event: ChangeEvent<HTMLInputElement>) => {
     event.preventDefault();
-    alert(event.target?.[0].value);
+    const target = event.target as unknown as { value: string }[];
+    alert(target?.[0].value);
   };
 
   return (
@@ -22,19 +25,19 @@ export const BoxPage = () => {
 
       <PageContainer>
         <PageSection>
-          <h2>Importar</h2>
+          <Heading as="h2">Importar</Heading>
           <CodeBlock css={{ mt: '6px', mb: '16px' }}>{codes.import}</CodeBlock>
-          <p>
+          <Text>
             O componente <HighlightedText>Box</HighlightedText> do Popix-ui é um dos mais versáteis,
             pois, por mais que por padrão renderize uma <HighlightedText>div</HighlightedText> no
             HTML da página, ele pode se comportar como qualquer outro elemento. Para isso, basta
             passar o elemento desejado como valor para a propriedade{' '}
             <HighlightedText>as</HighlightedText> do componente.
-          </p>
+          </Text>
         </PageSection>
 
         <PageSection>
-          <h2>Exemplos</h2>
+          <Heading as="h2">Exemplos</Heading>
           <Box css={{ display: 'flex', gap: '16px', mt: '6px' }}>
             <Box css={{ square: '40px', bgColor: '#6d28d9' }} />
             <Box css={{ square: '40px', bgColor: '#16a34a' }} />
@@ -44,9 +47,9 @@ export const BoxPage = () => {
           <CodeBlock css={{ my: '12px', mb: '24px' }}>{codes.example.div}</CodeBlock>
 
           <Box as="code">
-            <h3>Bloco de código</h3>
-            <h3>Bloco de código</h3>
-            <h3>Bloco de código</h3>
+            <Heading as="h4">Bloco de código</Heading>
+            <Heading as="h4">Bloco de código</Heading>
+            <Heading as="h4">Bloco de código</Heading>
           </Box>
           <CodeBlock css={{ my: '12px', mb: '32px' }}>{codes.example.code}</CodeBlock>
 
@@ -55,15 +58,6 @@ export const BoxPage = () => {
             <Button>Enviar</Button>
           </Box>
           <CodeBlock css={{ my: '12px', mb: '24px' }}>{codes.example.form}</CodeBlock>
-
-          <Box as="h1">Cabeçalho H1</Box>
-          <Box as="i" css={{ color: '#ea580c' }}>
-            Texto em itálico
-          </Box>
-          <Box as="br" />
-          <Box as="hr" />
-          <Box as="strong">Texto em negrito</Box>
-          <CodeBlock css={{ my: '12px', mb: '16px' }}>{codes.example.other}</CodeBlock>
         </PageSection>
       </PageContainer>
     </>

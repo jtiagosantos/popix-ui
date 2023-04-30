@@ -20,10 +20,5 @@ export const codes = {
   <input type="email" name="email" placeholder="Digite o seu e-mail" />
   <Button>Enviar</Button>
 </Box>`,
-    other: `<Box as="h1">Cabeçalho H1</Box>
-<Box as="i" css={{ color: '#ea580c' }}>Texto em itálico</Box>
-<Box as="br" />
-<Box as="hr" />
-<Box as="strong">Texto em negrito</Box>`,
   },
 };
